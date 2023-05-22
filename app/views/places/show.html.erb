@@ -1,0 +1,17 @@
+<h1>Posts from <%= @place.name %></h1>
+<p> Here are all fun activities from the city </p>
+<br>
+<p>
+ <% for post in @posts %>
+ <h3> <%= post["title"]%> </h3>
+ <h5> <%= post["posted_on"]%> </h5>
+ <p> <%= post["description"]%> </p>
+ <% end %>
+</p>
+<p>
+ <a href="/posts/new?place_id=<%= @place["id"] %>">Add New Post for this Place</a>
+</p>
+
+<p>
+ <a href="/places">Back to List of Places</a>
+</p>
