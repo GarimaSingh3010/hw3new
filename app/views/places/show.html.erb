@@ -1,5 +1,5 @@
 <h1>Posts from <%= @place.name %></h1>
-<p> Here are all fun activities from the city </p>
+<p> View fun activities from the city </p>
 <br>
 <p>
  <% for post in @posts %>
@@ -9,9 +9,9 @@
  <% end %>
 </p>
 <p>
- <a href="/posts/new?place_id=<%= @place["id"] %>">Add New Post for this Place</a>
+ <a href="/posts/new?place_id=<%= @place["id"] %>">Write your own post for this Place</a>
 </p>
 
 <p>
- <a href="/places">Back to List of Places</a>
+ <a href="/places">Return to page of Places</a>
 </p>
