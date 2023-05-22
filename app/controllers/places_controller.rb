@@ -10,7 +10,7 @@ class PlacesController < ApplicationController
   
   def create
     @place= Place.new
-    @Place["name"]=params["place"]["name"]
+    @place["name"] = params["place"]["name"]
     @place.save
     redirect_to"/places"
     
